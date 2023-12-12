@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import "./reset";
+@import "./leftPanel";
+@import "./rightPanel";
+
+
+// container 
+
+.container{
+    max-width: 968px + 15px *2;
+    width: 100%;
+    padding: 0 15px;
+}
+
+button.active {
+    border-radius: 4px;
+    border: 1px solid #5932EA;
+    background: #5932EA;
+    color: white;
+}
+
+.left-panel__list.active{
+  z-index: 2;
+  padding-left: 15px;
+  top: 71px;
+  width: 100%;
+  height: 100pc;
+  background: white;
+  transition: top 10s ease 1s ;
+  padding: 0px 15px;
+}
+
+.left-panel__li.active {
+    background-color: #5932EA;
+  }
+  
+  .left-panel__li.active a {
+    color: white;
+  }
+
+
+@media (max-width: 1250px) {
+  .container{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .left-panel__list.active{
+    top: 50px;
+  }
+}
+
+

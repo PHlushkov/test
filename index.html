@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <main class="main">
+        <div class="left-panel">
+                <div class="left-panel__body">
+                    <div>
+                        <div class="left-panel__header">
+                            <img src="./assets/icons/logo.svg" alt="Logo">
+                            <div class="left-panel__title">
+                                <a href="#">Dashboard</a>
+                                <p>v.01</p>
+                            </div>
+                        </div>
+                        <ul class="left-panel__list">
+                            <li class="left-panel__li">
+                                <div class="left-panel__li-link">
+                                    <img src="./assets/icons/key.svg" alt="Key">
+                                    <a href="#">Dashboard</a>
+                                </div>
+                            </li>
+                            <li class="left-panel__li">
+                                <div class="left-panel__li-link">
+                                    <img src="./assets/icons/product.svg" alt="product">
+                                    <a href="#">Product</a>
+                                </div>
+                                <div class="left-panel__arrow">&gt;</div>
+                            </li>
+                            <li class="left-panel__li active">
+                                <div class="left-panel__li-link">
+                                    <img src="./assets/icons/customer.svg" alt="Customers">
+                                    <a href="#">Customers</a>
+                                </div>
+                                <div class="left-panel__arrow">&gt;</div>
+
+                            </li>
+                            <li class="left-panel__li">
+                                <div class="left-panel__li-link">
+                                    <img src="./assets/icons/walletMoney.svg" alt="Wallet">
+                                    <a href="#">Income</a>
+                                </div>
+                                <div class="left-panel__arrow">&gt;</div>
+                            </li>
+                            <li class="left-panel__li">
+                                <div class="left-panel__li-link">
+                                    <img src="./assets/icons/promote.svg" alt="Promote">
+                                    <a href="#">Promote</a>
+                                </div>
+                                <div class="left-panel__arrow">&gt;</div>
+                            </li>
+                            <li class="left-panel__li">
+                                <div class="left-panel__li-link">
+                                    <img src="./assets/icons/messageQuestion.svg" alt="Key">
+                                    <a href="#">Help</a>
+                                </div>
+                                <div class="left-panel__arrow">&gt;</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="left-panel__footer">
+                            <img src="./assets/icons/user.png" alt="">
+                            <div class="left-panel__footer-description">
+                                <h4>Evano</h4>
+                                <span>Project Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="right-panel">
+            <div class="right-panel__wrapper">
+                <h2 class="right-panel__h2">Hello Evano 👋🏼,</h2>
+                <div class="container">
+                    <div class="right-panel__body">
+                        <div class="right-panel__header">
+                            <div class="right-panel__title">
+                                <h3>All Customers</h3>
+                                <span>Active Members</span>
+                            </div>
+                            <div class="right-panel__serach">
+                                <img src="./assets/icons/search.svg" alt="Search">
+                                <input placeholder="Search" type="text">
+                            </div>
+                        </div>
+                        <div class="right-panel__main">
+                            <ul class="right-panel__customers-info">
+                                <li class="right-panel__customer-name">
+                                    <span>Customer Name</span>
+                                    <ul class="right-panel__list customer-name" id="name"></ul>
+                                </li>
+                                <li class="right-panel__company">
+                                    <span>Company</span>
+                                    <ul class="right-panel__list company" id="company"></ul>
+                                </li>
+                                <li class="right-panel__phone-number">
+                                    <span>Phone Number</span>
+                                    <ul class="right-panel__list phone-number" id="phoneNumber"></ul>
+                                </li>
+                                <li class="right-panel__email">
+                                    <span>Email</span>
+                                    <ul class="right-panel__list email" id="email"></ul>
+                                </li>
+                                <li class="right-panel__country">
+                                    <span>Country</span>
+                                    <ul class="right-panel__list country" id="country"></ul>
+                                </li>
+                                <li class="right-panel__status">
+                                    <span>Status</span>
+                                    <ul class="right-panel__list status" id="status"></ul>
+                                </li>
+                            </ul>
+                            <div id="contactList-mobile"></div>
+                            </div>
+                            <div class="right-panel__footer">
+                                <div class="right-panel__footer-info">
+                                    <span>Showing data 1 to 8 of  256K entries</span>
+                                </div>
+                                <div class="right-panel__footer-pagination pagination">
+                                    <button id="prev">❮</button>
+                                    <div id="pages" class="pages"></div>
+                                    <button id="next">❯</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
